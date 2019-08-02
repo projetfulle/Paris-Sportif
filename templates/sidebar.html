@@ -1,0 +1,36 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+        <h5 class="card-header">A Propos</h5>
+
+    <div class="card-body">
+        <p class="card-text"> La centrale des paries est une plateforme qui met à la disposition de ses followers toute une gamme de pronostic. Notre plateforme est capable d'effectuer l'activée de paris en ligne. </pl>!</p>
+        <a href="#"
+           class="btn btn-danger">Voir Plus!</a>
+    </div>
+
+    <h5 class="card-header">Publicité</h5>
+
+    <div class="card-body">
+         {% load static %}
+        <img src="{% static 'blog/images/pub-nan.png' %}" width="100%">
+    </div>
+
+     <div class="card-body">
+         {% load static %}
+        <img src="{% static 'blog/images/pub-orange.jpg' %}" width="100%">
+    </div>
+
+</div>
+</div>
+
+{% endblock sidebar %}
